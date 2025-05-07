@@ -1,0 +1,163 @@
+#root{
+  
+}
+body{
+ 
+}
+/* Custom navbar toggle animation */
+.navbar-toggler-icon.cross-animate {
+  background-image: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-toggler-icon.cross-animate::before,
+.navbar-toggler-icon.cross-animate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon.cross-animate::before {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.navbar-toggler-icon.cross-animate::after {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* Transition for scroll effect */
+.transition-all {
+  transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Active nav link styling */
+.nav-link.active {
+  font-weight: 500;
+  color: var(--bs-primary) !important;
+}
+/* Hover effects */
+.hover-white:hover {
+  color: white !important;
+  transition: color 0.2s ease;
+}
+
+/* Footer positioning */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+/* Custom styles for the universe portfolio */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #4d44db;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Dark mode transition */
+.app-container {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+
+/* Navbar styles */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+/* Project card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .card:hover {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Section padding */
+section {
+  padding: 100px 0;
+}
+
+/* Custom button styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+  
+  .display-3 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,15 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="20" fill="#121218"/>
+  <path d="M40 90L64 30L88 90H76L70 75H58L52 90H40Z" fill="url(#hologramGradient)" opacity="0.8" style="mix-blend-mode: screen;"/>
+  <path d="M40 90L64 30L88 90H76L70 75H58L52 90H40Z" stroke="url(#hologramStroke)" stroke-width="2"/>
+  <defs>
+    <linearGradient id="hologramGradient" x1="64" y1="30" x2="64" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9C27B0" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#2962FF" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="hologramStroke" x1="64" y1="30" x2="64" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+</svg>
