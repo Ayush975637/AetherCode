@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Container, Row, Col, Form, Button,Alert } from "react-bootstrap";
 import { FiSend, FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 import { useState } from "react";
+import axios from "axios"; // Import axios
 const Contact = ({ darkMode }) => {
   const [notification, setNotification] = useState({
     show: false,
@@ -22,13 +23,15 @@ const Contact = ({ darkMode }) => {
     };
 
     try {
-      const response = await fetch('http://localhost:3003/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/api/contact`,
+        formData,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        }
+      );
 
       if (response.ok) {
         setNotification({
