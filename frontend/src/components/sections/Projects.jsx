@@ -11,7 +11,7 @@ const Projects = ({ darkMode }) => {
           "This is a full-featured Spotify clone built using React.js for the frontend and Node.js with Express for the backend, integrated with MongoDB for user authentication and data storage.",
         tags: ["React", "Talwind", "Node.js", "Bootstrap"],
         github: "https://github.com/Ayush975637/-spotify-react-frontend",
-        live: "https://spotify-react-frontend.vercel.app/",
+        live: "https://sangeet-react-frontend.vercel.app/",
         image: "spotify.png",
       },
       {
