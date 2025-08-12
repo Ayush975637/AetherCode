@@ -15,6 +15,25 @@ const Projects = ({ darkMode }) => {
         image: "spotify.png",
       },
       {
+  title: "Spider — AI Video Chat",
+  description:
+    "Spider is a real-time random video chat platform inspired by Monkey and Omegle. Built with Next.js, WebRTC, and Socket.io, it delivers instant low-latency connections, AI-powered moderation for safe conversations, and a sleek responsive design for seamless chatting across devices.",
+  tags: ["Next.js", "Tailwind CSS", "Node.js", "WebRTC", "Socket.io", "AI Moderation"],
+  github: "https://github.com/Ayush975637/monkey-frontend", // replace with correct repo
+  live: "https://spider-rho-swart.vercel.app/", // replace with actual live link
+  image: "spider.png", // replace with actual screenshot
+},
+{
+  title: "Europa — AI Finance App",
+  description:
+    "Europa is an AI-powered finance and expense management platform that helps users track spending, predict budgets, and make smarter money decisions. With ML-based insights, interactive analytics, and secure cloud storage, it’s your personal financial assistant in one app.",
+  tags: ["Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Chart.js", "OpenAI API"],
+  github: "https://github.com/Ayush975637/Finance", // replace with correct repo
+  live: "https://europa-cyan.vercel.app/", // replace with actual live link
+  image: "europa.png", // replace with actual screenshot
+},
+
+      {
         title: "Ribx E-Commerce",
         description:
           "Full-featured e-commerce platform with great UI and seamless checkout.",
