@@ -6,7 +6,7 @@ dotenv.config()
 const messageRouter = require('./routes/messageRouter');
 
 const app = express();
-const PORT = 3003;
+const PORT = process.env.PORT||3003;
 
 // CORS must come early
 app.use(cors({
