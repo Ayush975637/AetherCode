@@ -65,43 +65,43 @@ Users can send messages through the contact form, which is handled by a backend 
 
 ### 1. Clone the repository
 
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+-git clone https://github.com/your-username/your-repo.git
+-cd your-repo
 
 ### 2.Frontend Setup
-cd frontend
-npm install
-npm run dev
+-cd frontend
+-npm install
+-npm run dev
   
 ###Create .env:
-VITE_API_URL=http://localhost:3003
+-VITE_API_URL=http://localhost:3003
 
 ### 3.Backend Setup
-cd backend
-npm install
-npm run dev
+-cd backend
+-npm install
+-npm run dev
 
 ###Create .env:
 
-PORT=3003
-MONGODB_URI=your_mongodb_url
-CLIENT_URL=http://localhost:5173
+-PORT=3003
+-MONGODB_URI=your_mongodb_url
+-CLIENT_URL=http://localhost:5173
 
 ### 4.🚀 Deployment
-Frontend → Vercel
-Backend → Render
+-Frontend → Vercel
+-Backend → Render
 
 ### 5.📈 Future Improvements
-Add more projects
-Improve UI responsiveness
-Add analytics / tracking
+-Add more projects
+-Improve UI responsiveness
+-Add analytics / tracking
 
 ### 6.👨‍💻 Author
 
-Ayush Aggrawal
-📧 aa7782549@gmail.com
+-Ayush Aggrawal
+-📧 aa7782549@gmail.com
 
-🔗 https://github.com/Ayush975637
+-🔗 https://github.com/Ayush975637
 
 
 
