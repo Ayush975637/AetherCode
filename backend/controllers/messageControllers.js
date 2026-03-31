@@ -11,9 +11,10 @@ exports.postmessage = async (req, res, next) => {
   
       const messagex = new Contact({ name, email, subject, message });
       await messagex.save();
-      
+      console.log("message saved")
       res.status(201).json({ 
         success: true,
+        ok:true,
         message: "Message Sent Successfully",
         data: messagex 
       });

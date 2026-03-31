@@ -1,15 +1,16 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+const dotenv=require('dotenv')
+dotenv.config()
 const messageRouter = require('./routes/messageRouter');
 
 const app = express();
 const PORT = 3003;
-const DB_PATH = "mongodb+srv://Ayush9756:Ayush9756@firstcluster.kabexbf.mongodb.net/portfolio?retryWrites=true&w=majority&appName=firstcluster";
+
 // CORS must come early
 app.use(cors({
-  origin: 'http://localhost:5173', // frontend URL
+  origin: process.env.CLIENT_URL, // frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type']
 }));
@@ -25,7 +26,7 @@ app.use("/api/contact", messageRouter);
 app.get('/', (req, res) => res.send('API Working'));
 
 // MongoDB Connect & Start Server
-mongoose.connect(DB_PATH)
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Connected to Mongo');
     app.listen(PORT, () => {

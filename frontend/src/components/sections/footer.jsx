@@ -16,9 +16,9 @@ const Footer = ({ darkMode }) => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h5 className="mb-3">UniversePortfolio</h5>
+              <h5 className="mb-3"></h5>
               <p className="mb-4">
-                Crafting digital experiences that resonate across the cosmos.
+           Building real-world projects with a focus on backend systems and performance.
               </p>
             </motion.div>
 
@@ -51,7 +51,7 @@ const Footer = ({ darkMode }) => {
               className="mb-0"
             >
               &copy; {currentYear} Made with <FiHeart className="text-danger" />{" "}
-              by UniversePortfolio
+              by Ayush
             </motion.p>
           </Col>
         </Row>

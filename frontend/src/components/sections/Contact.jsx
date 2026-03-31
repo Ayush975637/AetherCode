@@ -21,10 +21,11 @@ const Contact = ({ darkMode }) => {
       subject: e.target.subject.value,
       message: e.target.message.value
     };
+    console.log(formData)
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/contact`,
+        `${import.meta.env.VITE_API_URL}/api/contact`,
         formData,
         {
           headers: {
@@ -32,8 +33,8 @@ const Contact = ({ darkMode }) => {
           }
         }
       );
-
-      if (response.ok) {
+  console.log(response)
+      if (response.status) {
         setNotification({
           show: true,
           message: 'Message sent successfully!',

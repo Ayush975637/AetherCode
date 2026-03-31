@@ -5,17 +5,17 @@ import { FiAward, FiUsers, FiFolder } from "react-icons/fi";
 const About = ({ darkMode }) => {
   const stats = [
     { icon: <FiAward />, value: "1+", label: "Years Experience" },
-    { icon: <FiUsers />, value: "0+", label: "Clients" },
-    { icon: <FiFolder />, value: "8+", label: "Projects" },
+{ icon: <FiUsers />, value: "300+", label: "DSA Problems" },
+    { icon: <FiFolder />, value: "3+", label: "Projects" },
   ];
 
   const skills = [
-    { name: "React", level: 90 },
-    { name: "Node.js", level: 85 },
-    { name: "TypeScript", level: 80 },
-    { name: "GraphQL", level: 75 },
-    { name: "UI/UX", level: 70 },
-  ];
+  { name: "React", level: 85 },
+  { name: "Node.js", level: 85 },
+  { name: "JavaScript", level: 85 },
+  { name: "Redis", level: 75 },
+  { name: "MongoDB", level: 80 },
+];
 
   return (
     <section id="about" className="py-5">
@@ -38,7 +38,7 @@ const About = ({ darkMode }) => {
               viewport={{ once: true }}
               className="lead"
             >
-              My journey through the cosmos of development
+         Building and learning through real-world projects
             </motion.p>
           </Col>
         </Row>
@@ -51,19 +51,13 @@ const About = ({ darkMode }) => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h3 className="mb-4">Cosmic Developer & Digital Explorer</h3>
-              <p className="mb-4">
-                I traverse the digital universe creating seamless experiences
-                that bridge the gap between technology and human interaction.
-                With a passion for clean code and intuitive design, I craft
-                solutions that stand the test of time.
-              </p>
+      <h3 className="mb-4">Full-Stack Developer (Backend Focus)</h3>
+             <p className="mb-4">
+I’m a second-year student focused on building full-stack applications, with a strong interest in backend systems. I enjoy working on real-world problems like performance optimization, caching, and scalable APIs.
+</p>
               <p>
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open-source projects, or mentoring aspiring
-                developers in their journey through the cosmos of web
-                development.
-              </p>
+Recently, I built projects like CodeVex (a GitHub analytics platform) and a real-time collaborative whiteboard, where I worked with technologies like Redis, WebSockets, and background job processing.
+</p>
             </motion.div>
           </Col>
 

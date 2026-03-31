@@ -5,65 +5,45 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 const Projects = ({ darkMode }) => {
   const projects = {
     featured: [
-      {
-        title: "Spotify-clone",
-        description:
-          "This is a full-featured Spotify clone built using React.js for the frontend and Node.js with Express for the backend, integrated with MongoDB for user authentication and data storage.",
-        tags: ["React", "Talwind", "Node.js", "Bootstrap"],
-        github: "https://github.com/Ayush975637/-spotify-react-frontend",
-        live: "https://sangeet-react-frontend.vercel.app/",
-        image: "spotify.png",
-      },
-      {
-  title: "Spider — AI Video Chat",
-  description:
-    "Spider is a real-time random video chat platform inspired by Monkey and Omegle. Built with Next.js, WebRTC, and Socket.io, it delivers instant low-latency connections, AI-powered moderation for safe conversations, and a sleek responsive design for seamless chatting across devices.",
-  tags: ["Next.js", "Tailwind CSS", "Node.js", "WebRTC", "Socket.io", "AI Moderation"],
-  github: "https://github.com/Ayush975637/monkey-frontend", // replace with correct repo
-  live: "https://spider-rho-swart.vercel.app/", // replace with actual live link
-  image: "spider.png", // replace with actual screenshot
-},
 {
-  title: "Europa — AI Finance App",
+  title: "CodeVex",
   description:
-    "Europa is an AI-powered finance and expense management platform that helps users track spending, predict budgets, and make smarter money decisions. With ML-based insights, interactive analytics, and secure cloud storage, it’s your personal financial assistant in one app.",
-  tags: ["Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Chart.js", "OpenAI API"],
-  github: "https://github.com/Ayush975637/Finance", // replace with correct repo
-  live: "https://europa-cyan.vercel.app/", // replace with actual live link
-  image: "europa.png", // replace with actual screenshot
+    "Full-stack developer analytics platform that transforms GitHub profiles into insights using caching, background jobs, and custom scoring. Built to handle API rate limits and large-scale data processing.",
+  tags: ["React", "Node.js", "PostgreSQL", "Redis", "BullMQ", "AWS","Docker","CI/CD"],
+  github: "https://github.com/Ayush975637/devpulse",
+  live: "https://codevex.online",
+  image: "codevex2.png",
+},
+     {
+  title: "Collaborative Whiteboard",
+  description:
+    "Real-time multi-user whiteboard with WebSocket-based room architecture, live cursor tracking, and Redis write buffering to reduce database load. Handles reconnections by syncing only missed strokes.",
+  tags: ["React", "Node.js", "Socket.io", "MongoDB", "Redis"],
+  github: "https://github.com/Ayush975637/Collaborative-Whiteboard",
+  live: "https://collaborative-whiteboard-9zr3.vercel.app/",
+  image: "whiteboard.png",
 },
 
-      {
-        title: "Ribx E-Commerce",
-        description:
-          "Full-featured e-commerce platform with great UI and seamless checkout.",
-        tags: ["Node.js", "Express", "Mongodb", "Tailwind"],
-        github: "https://github.com/Ayush975637/RibX-Backend-Database",
-        live: "#",
-        image: "ribx.png",
-      },
+
+
+
+
+{
+  title: "Spotify Clone",
+  description:
+    "Frontend-focused music app with API-based song fetching and playback UI. Built to practice React component design and state management.",
+  tags: ["React", "JavaScript", "CSS"],
+  github: "https://github.com/Ayush975637/-spotify-react-frontend",
+  live: "https://sangeet-react-frontend.vercel.app/",
+  image: "spotify.png",
+},
+     
+
+
+      
     
     ],
-    web: [
-      {
-        title: "Stellar Portfolio",
-        description: "Animated portfolio template with cosmic theme.",
-        tags: ["React", "Framer Motion", "GSAP"],
-        github: "#",
-        live: "#",
-        image: "project3.jpg",
-      },
-    ],
-    mobile: [
-      {
-        title: "Nebula Notes",
-        description: "Cross-platform note taking app with cloud sync.",
-        tags: ["React Native", "Firebase", "Redux"],
-        github: "#",
-        live: "#",
-        image: "project4.jpg",
-      },
-    ],
+   
   };
 
   return (
@@ -87,7 +67,7 @@ const Projects = ({ darkMode }) => {
               viewport={{ once: true }}
               className="lead"
             >
-              Exploring the digital cosmos, one project at a time
+           Projects focused on real-world systems, performance, and scalability
             </motion.p>
           </Col>
         </Row>
@@ -118,7 +98,8 @@ const Projects = ({ darkMode }) => {
                         }}
                       ></div>
                       <Card.Body>
-                        <Card.Title>{project.title}</Card.Title>
+                        {/* <Card.Title>{project.title}</Card.Title> */}
+                        <Card.Title className="fw-bold">{project.title}</Card.Title>
                         <Card.Text>{project.description}</Card.Text>
                         <div className="mb-3">
                           {project.tags.map((tag, i) => (
@@ -157,16 +138,8 @@ const Projects = ({ darkMode }) => {
               ))}
             </Row>
           </Tab>
-          <Tab eventKey="web" title="Web">
-            {/* Similar structure for web projects */}
-
-
-          </Tab>
-          <Tab eventKey="mobile" title="Mobile">
-            {/* Similar structure for mobile projects */}
-
-
-          </Tab>
+          
+         
         </Tabs>
       </Container>
     </section>

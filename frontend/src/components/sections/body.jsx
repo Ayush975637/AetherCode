@@ -19,18 +19,19 @@ const Main = ({ darkMode }) => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h6 className="text-primary mb-3">Hello, I'm </h6>
+                <h6 className="text-primary mb-3">Hi, I'm </h6>
                 <h1 className="display-3 fw-bold mb-4">
                 Ayush  <span className="text-primary">Aggrawal</span>
                 </h1>
                 <p className="lead mb-4">
-                🚀 Engineering intelligent full-stack experiences where code meets AI. Building scalable, future-ready web solutions with cutting-edge technology.
-                </p>
+I build full-stack applications with a focus on backend systems, performance, and real-world problem solving. Recently worked on projects involving caching, background jobs, and scalable APIs.
+</p>
                 <div className="d-flex gap-3">
                   <a href="#contact"><Button variant="primary" size="lg" className="px-4">
                     Contact Me <FiArrowRight className="ms-2" />
                   </Button>
                   </a>
+                  <a href="/resume.pdf" download>
                   <Button
                     variant={darkMode ? "outline-light" : "outline-dark"}
                     size="lg"
@@ -38,6 +39,7 @@ const Main = ({ darkMode }) => {
                   >
                     Download CV <FiDownload className="ms-2" />
                   </Button>
+                  </a>
                 </div>
               </motion.div>
             </Col>

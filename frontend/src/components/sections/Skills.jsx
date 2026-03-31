@@ -9,25 +9,33 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 import { SiTypescript, SiGraphql, SiMongodb, SiDocker } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
-const Skills = ({ darkMode }) => {
-  const techStack = [
-    { icon: <FaReact size={50} />, name: "React", level: "Expert" },
-    { icon: <FaNodeJs size={50} />, name: "Node.js", level: "Advanced" },
-    { icon: <SiTypescript size={50} />, name: "TypeScript", level: "Advanced" },
-    { icon: <FaJs size={50} />, name: "JavaScript", level: "Expert" },
-    { icon: <SiGraphql size={50} />, name: "GraphQL", level: "Intermediate" },
-    { icon: <SiMongodb size={50} />, name: "MongoDB", level: "Intermediate" },
-    { icon: <FaHtml5 size={50} />, name: "HTML5", level: "Expert" },
-    { icon: <FaCss3Alt size={50} />, name: "CSS3", level: "Expert" },
-    { icon: <FaGitAlt size={50} />, name: "Git", level: "Advanced" },
-    { icon: <SiDocker size={50} />, name: "Docker", level: "Intermediate" },
-    { icon: <FaPython  size={50} />, name: "Python", level: "Intermediate" },
-    { icon: <SiCplusplus  size={50} />, name: "C++", level: "Intermediate" },
-    
-  ];
 
+import { SiCplusplus } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
+
+
+const Skills=({ darkMode })=>{
+const techStack = [
+  // Frontend
+  { icon: <FaReact size={50} />, name: "React", level: "Advanced" },
+  { icon: <FaJs size={50} />, name: "JavaScript", level: "Advanced" },
+  { icon: <SiTypescript size={50} />, name: "TypeScript", level: "Intermediate" },
+  { icon: <FaHtml5 size={50} />, name: "HTML5", level: "Advanced" },
+  { icon: <FaCss3Alt size={50} />, name: "CSS3", level: "Advanced" },
+
+  // Backend (IMPORTANT)
+  { icon: <FaNodeJs size={50} />, name: "Node.js", level: "Advanced" },
+  { icon: <SiMongodb size={50} />, name: "MongoDB", level: "Intermediate" },
+  { icon: <SiDocker size={50} />, name: "Docker", level: "Intermediate" },
+
+  // ⭐ Your real strength (CodeVex)
+  { icon: <FaDatabase size={50} />, name: "PostgreSQL", level: "Intermediate" },
+  { icon: <FaDatabase size={50} />, name: "Redis", level: "Intermediate" },
+
+  // Tools / Others
+  { icon: <FaGitAlt size={50} />, name: "Git", level: "Intermediate" },
+  { icon: <SiCplusplus size={50} />, name: "C++", level: "Intermediate" },
+];
   return (
     <section id="skills" className="py-5">
       <Container>
@@ -49,7 +57,7 @@ const Skills = ({ darkMode }) => {
               viewport={{ once: true }}
               className="lead"
             >
-              Technologies I've mastered across the digital universe
+             Technologies I’ve worked with while building real-world projects
             </motion.p>
           </Col>
         </Row>
